@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-04T20:29:36.614Z",
+    "end": "2022-03-04T20:31:11.219Z",
+    "duration": 94605,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d4cc6a1e-345d-4d6a-af4a-6c2e46972a77",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6c1c8be3-fae6-4ae5-9660-51fda280b5f3",
+          "title": "Add todo first test",
+          "fullFile": "C:\\Users\\Sohan\\Desktop\\seleniumDemo\\test\\firstTest.js",
+          "file": "\\test\\firstTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successfully added first todo item in application",
+              "fullTitle": "Add todo first test Successfully added first todo item in application",
+              "timedOut": null,
+              "duration": 88167,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let driver = await new Builder().forBrowser(\"firefox\").build();\n        await driver.get(\"https://lambdatest.github.io/sample-todo-app/\")\n        await driver.findElement(By.id(\"sampletodotext\")).sendKeys(\"Sixth Item\", Key.RETURN);\n        let todoText = await driver.findElement(By.xpath(\"//li[last()]\")).getText().then(function (value) {\n            return value\n        }); //finding the xpath for the new entry in list and adding as new variable\n        todoText.should.equal(\"Sixth Item\"); //chai assertion for same todoText variable\n        await driver.quit();",
+              "err": {},
+              "uuid": "56a25474-d011-4bab-aa83-ff5168e5d455",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "56a25474-d011-4bab-aa83-ff5168e5d455"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 88167,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "28b949ee-b1e2-4185-af29-da1fad4460ed",
+          "title": "Add todo second test",
+          "fullFile": "C:\\Users\\Sohan\\Desktop\\seleniumDemo\\test\\secondTest.js",
+          "file": "\\test\\secondTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successfully added second todo item in application",
+              "fullTitle": "Add todo second test Successfully added second todo item in application",
+              "timedOut": null,
+              "duration": 92100,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let driver = await new Builder().forBrowser(\"firefox\").build();\n        await driver.get(\"https://lambdatest.github.io/sample-todo-app/\")\n        await driver.findElement(By.id(\"sampletodotext\")).sendKeys(\"Seventh Item\", Key.RETURN);\n        let todoText = await driver.findElement(By.xpath(\"//li[last()]\")).getText().then(function (value) {\n            return value\n        }); //finding the xpath for the new entry in list and adding as new variable\n        todoText.should.equal(\"Seventh Item\"); //chai assertion for same todoText variable\n        await driver.quit();",
+              "err": {},
+              "uuid": "f404f56f-5b2d-4876-9024-857f121bef31",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f404f56f-5b2d-4876-9024-857f121bef31"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 92100,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testResult--timestamp",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "/Users/Sohan/Desktop/seleniumDemo/testreports",
+        "reportFilename": "testResult--timestamp"
+      },
+      "version": "6.1.0"
+    }
+  }
+}

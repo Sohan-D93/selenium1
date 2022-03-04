@@ -1,0 +1,18 @@
+{
+  "name": "seleniumdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --no-timeouts --parallel --reporter mochawesome --require mochawesome/register --reporter-options reportDir=/Users/Sohan/Desktop/seleniumDemo/testreports,reportFilename=testResult,overwrite=false,timestamp=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "geckodriver": "^3.0.1",
+    "mocha": "^9.2.1",
+    "mochawesome": "^7.1.1",
+    "selenium-webdriver": "^4.1.1"
+  }
+}
